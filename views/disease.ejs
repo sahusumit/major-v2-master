@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+    <% include partials/diseaseStyle.ejs %>
+</head>
+
+<body>
+        <div class="w3layouts-main">
+               
+                   <div class="bg-layer">
+                       <h1>Add issues of Health</h1>
+                       <div class="header-main">
+                           
+                           <div class="header-left-bottom">
+    
+        <form action="/users/disease" method="post">
+
+					
+						
+	
+					<div class="icon1">
+						<input type="text" placeholder="Enter title" name="title" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="Health Issue" name="healthissue" />
+					</div>
+
+					<div class="icon1">
+						<input type="date" placeholder="Response to medication" name="response" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="Consulting Doctor" name="doctor" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="Hospital and Clinic info" name="hospital" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="Status" name="status" />
+					</div>
+					<div class="icon1">
+						<input type="Text" placeholder="Tests" name="test" />
+					</div>
+                     <div class="icon1">
+						<input type="Text" placeholder="Treatment Details" name="treatment" />
+                    </div>
+                    <div class="bottom">
+                            <button class="btn" value ="Submit">Submit</button>
+                            <!-- <input type="submit" class="btn" value="Submit"> -->
+					</div>
+                    
+
+                 </form>
+    </div> 
+
+			
+</div>
+</div>
+</div>	
+  
+</body>
+
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Edit Patient Details</title>
+        <% include partials/diseaseStyle.ejs %>
+        
+</head>
+
+<body>
+    <!--  -->
+
+       
+
+
+
+
+
+    <div class="w3layouts-main">
+               
+                <div class="bg-layer">
+                    <h1>Edit Mediacal Details of Disease</h1>
+                    <div class="header-main">
+                        
+                        <div class="header-left-bottom">
+
+        
+                <form action="/users/<%= id %>/edit" class="col-md-5" method="post">
+
+					
+              
+               <div class="form-group">
+            <label for="">User ID :</label>
+                    <%= id %>
+                    </div>
+        
+        <div class="icon1">
+                <input type="text" placeholder="Describe your Health issue" name="healthissue" />
+        </div>
+
+        <div class="icon1">
+                <input type="date" placeholder="Response to medication" name="response" />
+        </div>
+        <div class="icon1">
+                <input type="text" placeholder="Consulting Doctor" name="doctor" />
+        </div>
+        <div class="icon1">
+                <input type="text" placeholder="Medication Used" name="medication" />
+        </div>
+        <div class="icon1">
+                <input type="text" placeholder="Hospital and Clinic info" name="hospital" />
+        </div>
+        <div class="icon1">
+                <input type="text" placeholder="Status of Disease" name="status" />
+        </div>
+        <div class="icon1">
+                <input type="text" placeholder="Test" name="test" />
+        </div>
+<div class="icon1">
+                <input type="text" placeholder="Treatment" name="treatment" />
+        </div>
+        <div class="bottom">
+                        <button class="btn" value ="Submit">Submit</button>
+                        <!-- <input type="submit" class="btn" value="Submit"> -->
+        </div>
+
+</form>
+</div> 
+
+			
+</div>
+</div>
+</div>
+    
+
+   
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome</title>
+  <% include partials/scripts.ejs %>
+  <% include partials/formStyle.ejs %>
+  
+</head>
+<body>
+
+    <nav class="side ">
+        <div class="navigation">
+          <ul></ul>
+        </div>
+      </nav>
+      
+      <!-- Panel Top #library/panel/panel-top-01.html -->
+      <nav class="panel top" style="background:black">
+        <div class="sections desktop">
+          <div class="left"><a href="/" title="Slides Framework"><h3>Home</h3></a></div>
+          <div class="right">
+            <% if(!user) { %>
+              <ul class="menu">
+                  <li><a href="/network/blockchain">BLOCKCHAIN</a></li>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="/signup">SignUp</a></li>
+                </ul>
+            <% } else { %>
+              <ul class="menu">
+                  <li><a href="/network/blockchain" style="color: blanchedalmond">BLOCKCHAIN</a></li>
+                </ul>
+                <a class="button blue gradient" href="/profile">Profile</a> 
+            <% } %>
+          </div>
+        </div>
+        <div class="sections compact hidden">
+          <div class="left"><a href="#" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
+          <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+        </div>
+      </nav>
+      
+      <!-- Sidebar -->
+      <nav class="sidebar" data-sidebar-id="1">
+        <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+        <div class="content">
+          <a href="#" class="logo"><svg width="37" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-icon"></use></svg></a>
+          <ul class="mainMenu margin-top-3">
+             <ul class="menu">
+             
+              <li><a href="/login">Login</a></li>
+              <li><a href="/signup">SignUp</a></li>
+            </ul>
+          </ul>
+          <ul class="subMenu small opacity-8">
+           <li><a href="/network/blockchain" ><b>BLOCKCHAIN</b></a></li>
+           <a class="button blue gradient" href="/profile">Profile</a> 
+          </ul>
+          <ul class="social opacity-8">
+            <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+            <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+            <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
+          </ul>
+        </div>
+      </nav>
+<!-- navbar end -->
+
+<!-- update -->
+<div class="w3layouts-main">
+ <div class="column22">
+	<div class="bg-layer">
+		<h1>Personal details</h1>
+		<div class="header-main">
+			
+			<div class="header-left-bottom">
+                    <form action="/users/update" method="post">
+
+					
+						<p>Patient ID:</p>
+	
+					<div class="icon1">
+						<input type="text" placeholder="Enter Full Name" name="name" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="Mobile Number" name="mobile" />
+					</div>
+
+					<div class="icon1">
+						<input type="date" placeholder="Date of Birth" name="dateofbirth" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="Enter Address" name="address" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="sex" name="sex" />
+					</div>
+					<div class="icon1">
+						<input type="tel" placeholder="Emergency Contact" name="emerency" />
+					</div>
+				
+			</div>
+		</div>
+	 </div>
+   </div>
+
+   <div class="column22">
+	 <div class="bg-layer">
+		<h1>Health details</h1>
+		<div class="header-main">
+			<div class="header-left-bottom">
+					<div class="icon1">
+						<input type="text" placeholder="Bloodgroup" name="bloodgroup" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="List of Allergies('NKA' if not known)" name="allergies" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="Enter BMI" name="bmi" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="Significant Accident" name="accidents" />
+					</div>
+					<div class="icon1">
+						<input type="text" placeholder="Medical History" name="history" />
+					</div>
+					<div class="bottom">
+                            <button class="btn" value ="Submit">Submit</button>
+                            <!-- <input type="submit" class="btn" value="Submit"> -->
+					</div>
+					
+				</form>	
+			</div>
+			
+		</div>
+	</div>
+  </div>	
+	
+	
+</div>	
+
+ 
+</body>
+</html>
