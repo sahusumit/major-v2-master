@@ -73,7 +73,7 @@ li a:hover:not(.active) {
 
 <body>
 
-
+  
               
               <!-- Panel Top #library/panel/panel-top-01.html -->
             
@@ -93,7 +93,7 @@ li a:hover:not(.active) {
               
               <div class ="row1" style="text-align: center">
                     <div class="col" style="padding: 20px">
-                  <h1 style="text-decoration-style: double">CHAIN</h1>
+                  <h1 style="text-decoration-style: double">MEDICAL-CHAIN</h1>
                </div>
             </div>
 
@@ -180,7 +180,7 @@ li a:hover:not(.active) {
                     <% chain.pendingTransactions.forEach(function(trans) {  %>
 
                         <div class="row" style="padding-top: 10px">
-                                <div class="card"  style="width: 20rem; padding: 4px "  >
+                                <div class="card"  style="width: 81rem; padding: 4px "  >
                                     <div class="card-body">
                                         <h5 class="card-title">
                            
@@ -191,7 +191,7 @@ li a:hover:not(.active) {
                             
                         <% } %> 
                         <p>
-                                Transaction id: <%= trans.transactionId %>
+                               Transaction id: <%= trans.transactionId %>
                         </p>
                     </h5>
                 </div>
@@ -207,8 +207,15 @@ li a:hover:not(.active) {
                 <% } %>
            
 </div>
-    
+    <!-- new changes -->
+    <div class="row">  
+          
         
+            <div class="row" style="padding-top: 10px">
+                    <div class="card"  style="width:40rem; padding: 4px; 
+                     background-color:transparent; color:black; text-align: left"  >
+                        <div class="card-body">
+                            <h5 class="card-title">
 
         <div>
                 <h2 class="font-family"> CURRENT NODE URL </h2>
@@ -229,30 +236,62 @@ li a:hover:not(.active) {
                     <span>Empty</span>
                 <% } %> 
         </div>
+    </h5>
+</div>
+</div>
+</div>
+  
+<div class="row" style="padding-top: 10px">
+        <div class="card"  style="width:40rem; padding: 4px; 
+         background-color:transparent; color:black; text-align: left"  >
+            <div class="card-body">
+                <h5 class="card-title">
+
+
+<form action="/network/mine" method="get">
+    <h3>
+        Mine: <button type="button" class="btn btn-danger">MINE </button>
+    </h3>
+    
+       
+   
+</form>
+
+<form action="/network/consensus" method="get">
+    <h3>
+        Check for update:  <button type="button"class="btn btn-primary btn-lg"> Update</button>
+             
+    </h3>
+    
+</form>
+
+
+</h5>
+</div>
+</div>
     
     </div>
-</div> 
+</div>            
 
-        <form action="/network/mine" method="get">
-            <h3>
-                Mine:
-            </h3>
-            <button class="button">
-                Mine
-            </button>
-        </form>
+
+
+
+<div class="row"> 
     
-        <form action="/network/consensus" method="get">
-            <h3>
-                Check for update:
-            </h3>
-            <button class="button">
-                Update
-            </button>
-        </form>
-    
-   
-        
+        <div class="row" style="padding-top: 10px">
+            <div class="card"  style="width:81rem; padding: 4px; margin-bottom: 15px" >
+                    <div class="card-body">
+                        <h5 class="card-title">
+                         <input type="text" class="form-control" aria-label="Large"
+                         placeholder="INPUT HERE" aria-describedby="inputGroup-sizing-sm">
+                       <br>
+                         <button type="button" class="btn  btn-primary"> Submit</button> 
+                        </h5>
+                    </div>
+            </div>
+        </div>
+  
+</div>
 
 
 
