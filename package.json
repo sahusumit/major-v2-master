@@ -25,7 +25,7 @@
     "request-promise": "^4.2.4",
     "serve-favicon": "~2.4.5",
     "sha256": "^0.2.0",
-    "simple-crypto-js": "^2.0.2",
+    "simple-crypto-js": "^2.3.0",
     "uuid": "^3.3.2"
   }
 }
